@@ -61,7 +61,7 @@ export default function Services() {
                 { icon: 'touch_app', label: 'User-Friendly Interfaces' },
               ].map((item) => (
                 <li key={item.label} className={styles.cellListItem}>
-                  <span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '18px' }}>
+                  <span className={`material-symbols-outlined ${styles.iconSmallPrimary}`}>
                     {item.icon}
                   </span>
                   {item.label}
@@ -86,7 +86,7 @@ export default function Services() {
                   <span className={styles.metricPositive}>+14.8%</span>
                 </div>
                 <div className={styles.metricBar}>
-                  <div className={styles.metricFill} style={{ width: '78%', backgroundColor: 'var(--color-primary-container)' }} />
+                  <div className={`${styles.metricFill} ${styles.metricFillPrimaryContainer}`} />
                   <div className={styles.metricLabel}>REVENUE_TARGET: REACHED</div>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export default function Services() {
                   <span className={styles.metricPositive}>-120ms</span>
                 </div>
                 <div className={styles.metricBar}>
-                  <div className={styles.metricFill} style={{ width: '92%', backgroundColor: 'var(--color-secondary)' }} />
+                  <div className={`${styles.metricFill} ${styles.metricFillSecondary}`} />
                   <div className={styles.metricLabel}>SITE_SPEED: OPTIMIZED</div>
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default function Services() {
             </p>
             <Link href="/portfolio" className={styles.cellLink}>
               SEE_CASE_STUDIES
-              <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>arrow_forward</span>
+              <span className={`material-symbols-outlined ${styles.iconSmall}`}>arrow_forward</span>
             </Link>
           </div>
 
@@ -167,11 +167,11 @@ export default function Services() {
             <div className={styles.metricCards}>
               <div className={styles.metricCard}>
                 <span className={styles.metricCardLabel}>Repeat_Customers</span>
-                <span className={styles.metricCardValue} style={{ color: 'var(--color-secondary)' }}>62.4%</span>
+                <span className={`${styles.metricCardValue} ${styles.metricValueSecondary}`}>62.4%</span>
               </div>
               <div className={styles.metricCard}>
                 <span className={styles.metricCardLabel}>Acquisition_Cost</span>
-                <span className={styles.metricCardValue} style={{ color: 'var(--color-error)' }}>REDUCED</span>
+                <span className={`${styles.metricCardValue} ${styles.metricValueError}`}>REDUCED</span>
               </div>
             </div>
           </div>

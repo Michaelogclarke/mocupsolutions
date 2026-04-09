@@ -69,7 +69,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.heroBubble}>
-              <span className="material-symbols-outlined" style={{ color: 'white', marginBottom: '8px', display: 'block' }}>
+              <span className={`material-symbols-outlined ${styles.iconWhiteBlock}`}>
                 trending_up
               </span>
               <p className={styles.heroBubbleText}>
@@ -86,7 +86,7 @@ export default function Home() {
           {[...marqueeItems, ...marqueeItems].map((item, i) => (
             <span key={i} className={styles.marqueeGroup}>
               <span className={styles.marqueeText}>{item.text}</span>
-              <span className="material-symbols-outlined" style={{ opacity: 0.5 }}>{item.icon}</span>
+              <span className={`material-symbols-outlined ${styles.iconFaded}`}>{item.icon}</span>
             </span>
           ))}
         </div>
@@ -130,7 +130,7 @@ export default function Home() {
             </div>
             {/* Dark side panel */}
             <div className={styles.helpDark}>
-              <span className="material-symbols-outlined" style={{ fontSize: '48px', color: 'var(--color-primary)', marginBottom: '24px', display: 'block' }}>
+              <span className={`material-symbols-outlined ${styles.iconLargePrimary}`}>
                 insights
               </span>
               <h4 className={styles.helpDarkTitle}>Clear Results <br />You Can See</h4>
@@ -167,7 +167,7 @@ export default function Home() {
               <ul className={styles.launchList}>
                 {['Regular Security Checks', 'Help With Domain & Email', 'Monthly Performance Tuning'].map((item) => (
                   <li key={item} className={styles.launchListItem}>
-                    <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>check_circle</span>
+                    <span className={`material-symbols-outlined ${styles.iconSmall}`}>check_circle</span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -177,7 +177,7 @@ export default function Home() {
             <div className={styles.launchFeature}>
               <div className={styles.launchFeatureTop}>
                 <h3 className={styles.launchFeatureTitle}>Smart Features</h3>
-                <span className="material-symbols-outlined" style={{ color: 'var(--color-primary)' }}>auto_awesome</span>
+                <span className={`material-symbols-outlined ${styles.iconPrimary}`}>auto_awesome</span>
               </div>
               <p className={styles.launchFeatureBody}>
                 Automate the repetitive tasks. We build smart features that automatically
@@ -215,7 +215,7 @@ export default function Home() {
               { icon: 'campaign', title: 'Customer Loyalty', body: 'Keep your customers coming back with simple email newsletters and loyalty programs that we set up and manage for you.' },
             ].map((card) => (
               <div key={card.title} className={styles.card}>
-                <span className="material-symbols-outlined" style={{ fontSize: '36px', color: 'var(--color-primary)', marginBottom: '24px', display: 'block', transition: 'transform 0.2s' }}>
+                <span className={`material-symbols-outlined ${styles.iconMediumPrimary}`}>
                   {card.icon}
                 </span>
                 <h3 className={styles.cardTitle}>{card.title}</h3>

@@ -64,11 +64,16 @@
   --color-zinc-900: #18181b;
   --color-zinc-950: #09090b;
 
-  --shadow-brutalist: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  --color-success: #22c55e;
+  --color-success-light: #4ade80;
+  --color-warning: #eab308;
+  --color-danger: #ef4444;
+
+  --shadow-brutalist: 4px 4px 0px 0px rgba(27, 28, 28, 1);
   --shadow-brutalist-primary: 4px 4px 0px 0px rgba(168, 51, 0, 1);
-  --shadow-brutalist-lg: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  --shadow-brutalist-lg: 8px 8px 0px 0px rgba(27, 28, 28, 1);
   --shadow-brutalist-primary-lg: 8px 8px 0px 0px rgba(168, 51, 0, 1);
-  --shadow-nav: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  --shadow-nav: 4px 4px 0px 0px rgba(27, 28, 28, 1);
 
   --font-headline: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;

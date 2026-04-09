@@ -13,7 +13,7 @@ export default function Footer() {
               Helping small businesses thrive online.
             </p>
           </div>
-          <p className={styles.copyright}>©2024_Moc-up_Solutions_LLC [V.3.1.0]</p>
+          <p className={styles.copyright}>©2025_Moc-up_Solutions_LLC [V.3.1.0]</p>
         </div>
 
         {/* Services */}
@@ -46,7 +46,7 @@ export default function Footer() {
               <span className={`material-symbols-outlined ${styles.socialIcon}`}>thumb_up</span>
             </div>
           </div>
-          <p className={styles.copyright}>©2024_Moc-up_Solutions_LLC [V.3.1.0]</p>
+          <p className={styles.copyright}>©2025_Moc-up_Solutions_LLC [V.3.1.0]</p>
         </div>
       </div>
     </footer>

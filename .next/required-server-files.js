@@ -104,7 +104,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/home/michaelogclarke/agency-site/moc-up-solutions",
+    "outputFileTracingRoot": "/home/michaelogclarke/mocupsolutions",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -304,11 +304,11 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.js",
     "turbopack": {
-      "root": "/home/michaelogclarke/agency-site/moc-up-solutions"
+      "root": "/home/michaelogclarke/mocupsolutions"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "/home/michaelogclarke/agency-site/moc-up-solutions",
+  "appDir": "/home/michaelogclarke/mocupsolutions",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
