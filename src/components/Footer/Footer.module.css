@@ -1,0 +1,134 @@
+.footer {
+  width: 100%;
+  border-top: 2px solid var(--color-zinc-900);
+  background-color: var(--color-surface);
+  background-image: url('https://www.transparenttextures.com/patterns/graphy.png');
+  background-repeat: repeat;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  min-height: 400px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    divide-x: 2px solid var(--color-zinc-900);
+  }
+}
+
+.brand {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--color-zinc-900);
+}
+
+@media (min-width: 768px) {
+  .brand {
+    border-bottom: none;
+    border-right: 2px solid var(--color-zinc-900);
+  }
+}
+
+.brandName {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--color-zinc-900);
+  margin-bottom: 16px;
+}
+
+.brandTagline {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--color-zinc-500);
+  line-height: 1.6;
+}
+
+.col {
+  padding: 32px;
+  border-bottom: 2px solid var(--color-zinc-900);
+}
+
+@media (min-width: 768px) {
+  .col {
+    border-bottom: none;
+    border-right: 2px solid var(--color-zinc-900);
+  }
+}
+
+.colHeader {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-zinc-400);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.colLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footerLink {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--color-zinc-500);
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+.footerLink:hover {
+  color: #f54e00;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.social {
+  padding: 32px;
+  background-color: var(--color-zinc-900);
+  color: var(--color-zinc-100);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.iconRow {
+  display: flex;
+  gap: 16px;
+}
+
+.socialIcon {
+  color: var(--color-zinc-100);
+  cursor: pointer;
+  transition: color 0.1s;
+}
+
+.socialIcon:hover {
+  color: var(--color-primary);
+}
+
+.copyright {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-zinc-500);
+  margin-top: 32px;
+}
