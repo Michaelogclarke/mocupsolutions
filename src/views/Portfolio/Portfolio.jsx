@@ -51,7 +51,7 @@ export default function Portfolio() {
               <div className={styles.featuredOverlay}>
                 <div className={styles.featuredOverlayTop}>
                   <span className={styles.caseTag}>CASE_01</span>
-                  <span className="material-symbols-outlined" style={{ color: 'white', fontSize: '28px' }}>open_in_new</span>
+                  <span className={`material-symbols-outlined ${styles.iconWhiteLarge}`}>open_in_new</span>
                 </div>
                 <div className={styles.featuredOverlayBottom}>
                   <h3 className={styles.featuredTitle}>E-commerce_Redesign</h3>
@@ -89,7 +89,7 @@ export default function Portfolio() {
             <div className={styles.sideCardInner}>
               <div className={styles.sideCardHeader}>
                 <span className={styles.caseTagOrange}>CASE_02</span>
-                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>dashboard</span>
+                <span className={`material-symbols-outlined ${styles.iconFilled}`}>dashboard</span>
               </div>
               <h3 className={styles.sideCardTitle}>SaaS_Analytics_Dashboard</h3>
               <p className={styles.sideCardDesc}>
@@ -114,7 +114,7 @@ export default function Portfolio() {
                 <p className={styles.clientNoteText}>
                   "The new architecture solved our scaling issues and reduced server costs significantly."
                 </p>
-                <span className="material-symbols-outlined" style={{ position: 'absolute', top: '-12px', right: '-12px', color: 'var(--color-secondary)', fontSize: '24px', transform: 'rotate(45deg)' }}>
+                <span className={`material-symbols-outlined ${styles.iconAbsoluteRotated}`}>
                   verified
                 </span>
               </div>
@@ -144,19 +144,19 @@ export default function Portfolio() {
 
           {/* Health Tech */}
           <div className={styles.smallCard}>
-            <div className={styles.smallCardBody} style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div className={`${styles.smallCardBody} ${styles.smallCardBodyFullHeight}`}>
               <div>
-                <span className="material-symbols-outlined" style={{ color: 'var(--color-primary)', fontSize: '48px', marginBottom: '16px', display: 'block', fontVariationSettings: "'FILL' 1" }}>
+                <span className={`material-symbols-outlined ${styles.iconLargePrimaryFilled}`}>
                   mobile_friendly
                 </span>
                 <h3 className={styles.smallCardTitle}>Health_Tech_App</h3>
-                <p className={styles.smallCardDesc} style={{ fontStyle: 'italic' }}>
+                <p className={`${styles.smallCardDesc} ${styles.textItalic}`}>
                   "A HIPAA-compliant patient portal that simplifies medical record management for small clinics."
                 </p>
               </div>
               <div>
                 <div className={styles.progressBar}>
-                  <div className={styles.progressFill} style={{ width: '95%' }} />
+                  <div className={`${styles.progressFill} ${styles.progressFill95}`} />
                 </div>
                 <div className={styles.progressRow}>
                   <span>ADOPTION_RATE</span>
@@ -164,7 +164,7 @@ export default function Portfolio() {
                 </div>
                 <div className={styles.smallCardFooter}>
                   <span>COMPLETED: 2024.10.01</span>
-                  <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>arrow_forward</span>
+                  <span className={`material-symbols-outlined ${styles.iconSmall}`}>arrow_forward</span>
                 </div>
               </div>
             </div>
@@ -182,7 +182,7 @@ export default function Portfolio() {
               <h3 className={styles.smallCardTitle}>FinTech_Platform</h3>
               <button className={styles.readBtn}>
                 READ_STUDY
-                <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>menu_book</span>
+                <span className={`material-symbols-outlined ${styles.iconSmall}`}>menu_book</span>
               </button>
             </div>
           </div>

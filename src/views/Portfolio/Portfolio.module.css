@@ -97,14 +97,19 @@
 .featuredCard {
   background-color: var(--color-surface);
   border: 2px solid var(--color-zinc-900);
-  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 8px 8px 0px 0px rgba(27, 28, 28, 1);
   overflow: hidden;
   transition: all 0.2s;
 }
 
 .featuredCard:hover {
   transform: translate(-4px, -4px);
-  box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 12px 12px 0px 0px rgba(27, 28, 28, 1);
+}
+
+.featuredCard:focus-within {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 4px;
 }
 
 @media (min-width: 768px) {
@@ -225,7 +230,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #22c55e;
+  background-color: var(--color-success);
   animation: pulse 2s ease-in-out infinite;
 }
 
@@ -358,13 +363,66 @@
 .smallCard {
   background-color: var(--color-surface);
   border: 2px solid var(--color-zinc-900);
-  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 8px 8px 0px 0px rgba(27, 28, 28, 1);
   overflow: hidden;
   transition: background-color 0.2s;
 }
 
 .smallCard:hover {
-  background-color: #fafafa;
+  background-color: var(--color-surface-container-low);
+}
+
+.smallCard:focus-within {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+/* ============================
+   UTILITY ICON STYLES
+   ============================ */
+.iconWhiteLarge {
+  color: white;
+  font-size: 28px;
+}
+
+.iconFilled {
+  font-variation-settings: 'FILL' 1;
+}
+
+.iconAbsoluteRotated {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  color: var(--color-secondary);
+  font-size: 24px;
+  transform: rotate(45deg);
+}
+
+.iconLargePrimaryFilled {
+  color: var(--color-primary);
+  font-size: 48px;
+  margin-bottom: 16px;
+  display: block;
+  font-variation-settings: 'FILL' 1;
+}
+
+.iconSmall {
+  font-size: 16px;
+}
+
+.smallCardBodyFullHeight {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textItalic {
+  font-style: italic;
+}
+
+.progressFill95 {
+  width: 95%;
 }
 
 @media (min-width: 768px) {

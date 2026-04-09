@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
 /* ============================
    CSS DESIGN TOKENS
@@ -64,11 +63,16 @@
   --color-zinc-900: #18181b;
   --color-zinc-950: #09090b;
 
-  --shadow-brutalist: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  --color-success: #22c55e;
+  --color-success-light: #4ade80;
+  --color-warning: #eab308;
+  --color-danger: #ef4444;
+
+  --shadow-brutalist: 4px 4px 0px 0px rgba(27, 28, 28, 1);
   --shadow-brutalist-primary: 4px 4px 0px 0px rgba(168, 51, 0, 1);
-  --shadow-brutalist-lg: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  --shadow-brutalist-lg: 8px 8px 0px 0px rgba(27, 28, 28, 1);
   --shadow-brutalist-primary-lg: 8px 8px 0px 0px rgba(168, 51, 0, 1);
-  --shadow-nav: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  --shadow-nav: 4px 4px 0px 0px rgba(27, 28, 28, 1);
 
   --font-headline: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;

@@ -13,10 +13,10 @@ export default function Navbar() {
           <NavLinks />
         </div>
         <div className={styles.right}>
-          <span className="material-symbols-outlined" style={{ color: 'var(--color-zinc-600)', cursor: 'pointer', padding: '4px' }}>
+          <span className={`material-symbols-outlined ${styles.iconButton}`} tabIndex="0" role="button" aria-label="Help">
             help
           </span>
-          <span className="material-symbols-outlined" style={{ color: 'var(--color-zinc-600)', cursor: 'pointer', padding: '4px' }}>
+          <span className={`material-symbols-outlined ${styles.iconButton}`} tabIndex="0" role="button" aria-label="Contact">
             mail
           </span>
           <Link href="/contact" className={styles.cta}>

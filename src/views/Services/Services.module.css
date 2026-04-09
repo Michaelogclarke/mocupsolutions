@@ -580,6 +580,15 @@
   border: 2px solid var(--color-zinc-900);
 }
 
+.ctaBtnPrimary:hover {
+  background-color: var(--color-primary);
+}
+
+.ctaBtnPrimary:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 4px;
+}
+
 .ctaBtnPrimary:active {
   transform: translate(2px, 2px);
   box-shadow: none;
@@ -599,6 +608,45 @@
   text-decoration: none;
 }
 
+.ctaBtnSecondary:hover {
+  background-color: var(--color-surface-container-low);
+}
+
+.ctaBtnSecondary:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 4px;
+}
+
 .ctaBtnSecondary:active {
   transform: translate(2px, 2px);
+}
+
+/* ============================
+   UTILITY ICON STYLES
+   ============================ */
+.iconSmallPrimary {
+  color: var(--color-primary);
+  font-size: 18px;
+}
+
+.iconSmall {
+  font-size: 16px;
+}
+
+.metricFillPrimaryContainer {
+  width: 78%;
+  background-color: var(--color-primary-container);
+}
+
+.metricFillSecondary {
+  width: 92%;
+  background-color: var(--color-secondary);
+}
+
+.metricValueSecondary {
+  color: var(--color-secondary);
+}
+
+.metricValueError {
+  color: var(--color-error);
 }

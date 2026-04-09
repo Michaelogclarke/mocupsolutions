@@ -81,7 +81,7 @@ export default function Contact() {
                       <span className={styles.checkboxCategory}>{svc.category}</span>
                       <div className={`${styles.checkboxBox} ${selected.includes(svc.id) ? styles.checkboxBoxChecked : ''}`}>
                         {selected.includes(svc.id) && (
-                          <span className="material-symbols-outlined" style={{ fontSize: '12px', color: 'white' }}>check</span>
+                          <span className={`material-symbols-outlined ${styles.iconCheckSmallWhite}`}>check</span>
                         )}
                       </div>
                     </div>
@@ -116,7 +116,7 @@ export default function Contact() {
               </div>
               <button className={styles.submitBtn}>
                 <span>SEND INQUIRY</span>
-                <span className="material-symbols-outlined" style={{ transition: 'transform 0.2s' }}>send</span>
+                <span className={`material-symbols-outlined ${styles.iconSendAnimated}`}>send</span>
               </button>
             </div>
           </div>
@@ -128,7 +128,7 @@ export default function Contact() {
           <div className={styles.sideCard}>
             <div className={styles.sideCardHeader}>
               <span className={styles.sideCardTag}>// Physical_Node</span>
-              <span className="material-symbols-outlined" style={{ fontSize: '18px' }}>location_on</span>
+              <span className={`material-symbols-outlined ${styles.iconLocationSmall}`}>location_on</span>
             </div>
             <div className={styles.mapPlaceholder}>
               <img
@@ -184,7 +184,7 @@ export default function Contact() {
             </div>
             <div className={styles.liveLogs}>
               <div className={styles.liveLogsHeader}>
-                <span className="material-symbols-outlined" style={{ fontSize: '16px', color: 'var(--color-primary)' }}>terminal</span>
+                <span className={`material-symbols-outlined ${styles.iconTerminalSmallPrimary}`}>terminal</span>
                 <span className={styles.liveLogsTitle}>Live_Logs</span>
               </div>
               <div className={styles.liveLogsText}>
@@ -206,7 +206,7 @@ export default function Contact() {
                 +1 (800) SKETCH-ENGINE
               </a>
             </div>
-            <span className="material-symbols-outlined" style={{ position: 'absolute', bottom: '-16px', right: '-16px', fontSize: '96px', opacity: 0.1, transform: 'rotate(12deg)', pointerEvents: 'none' }}>
+            <span className={`material-symbols-outlined ${styles.iconDecorative}`}>
               bolt
             </span>
           </div>

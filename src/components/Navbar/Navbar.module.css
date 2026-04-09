@@ -61,8 +61,13 @@
   background-color: var(--color-zinc-100);
 }
 
+.link:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
 .active {
-  color: #f54e00;
+  color: var(--color-primary);
   font-weight: 700;
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -98,6 +103,11 @@
   background-color: var(--color-zinc-700);
 }
 
+.cta:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 4px;
+}
+
 .cta:active {
   transform: translate(2px, 2px);
   box-shadow: none;
@@ -107,4 +117,21 @@
   .cta {
     display: flex;
   }
+}
+
+.iconButton {
+  color: var(--color-zinc-600);
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.iconButton:hover {
+  color: var(--color-zinc-900);
+}
+
+.iconButton:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+  border-radius: 2px;
 }

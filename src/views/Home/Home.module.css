@@ -103,7 +103,12 @@
 
 .btnPrimary:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 6px 6px 0px 0px rgba(27, 28, 28, 1);
+}
+
+.btnPrimary:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 4px;
 }
 
 .btnPrimary:active {
@@ -130,7 +135,12 @@
 
 .btnSecondary:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 6px 6px 0px 0px rgba(27, 28, 28, 1);
+}
+
+.btnSecondary:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 4px;
 }
 
 .btnSecondary:active {
@@ -171,7 +181,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ef4444;
+  background-color: var(--color-danger);
   display: block;
 }
 
@@ -179,7 +189,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #eab308;
+  background-color: var(--color-warning);
   display: block;
 }
 
@@ -187,7 +197,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #22c55e;
+  background-color: var(--color-success);
   display: block;
 }
 
@@ -210,7 +220,7 @@
 }
 
 .terminalPrompt {
-  color: #22c55e;
+  color: var(--color-success);
 }
 
 .terminalComment {
@@ -388,8 +398,6 @@
   border-top: 2px solid rgba(27, 28, 28, 0.1);
   padding-top: 32px;
 }
-
-.stat {}
 
 .statLabel {
   display: block;
@@ -704,4 +712,45 @@
 
 .ctaButton:hover {
   background-color: var(--color-primary);
+}
+
+.ctaButton:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 4px;
+}
+
+/* ============================
+   UTILITY ICON STYLES
+   ============================ */
+.iconWhiteBlock {
+  color: white;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.iconFaded {
+  opacity: 0.5;
+}
+
+.iconLargePrimary {
+  font-size: 48px;
+  color: var(--color-primary);
+  margin-bottom: 24px;
+  display: block;
+}
+
+.iconSmall {
+  font-size: 16px;
+}
+
+.iconPrimary {
+  color: var(--color-primary);
+}
+
+.iconMediumPrimary {
+  font-size: 36px;
+  color: var(--color-primary);
+  margin-bottom: 24px;
+  display: block;
+  transition: transform 0.2s;
 }
