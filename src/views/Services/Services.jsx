@@ -15,8 +15,8 @@ export default function Services() {
               OUR <span className={styles.heroAccent}>EXPERTISE</span>
             </h1>
             <p className={styles.heroBody}>
-              We don't just build websites; we create powerful digital systems designed
-              to help your small business grow, compete, and win.
+              Not just websites — I build the digital tools your small business actually
+              needs to save time, get found, and grow.
             </p>
             <div className={styles.heroPill}>
               High-Performance Tools for Your Business
@@ -187,8 +187,8 @@ export default function Services() {
             READY TO <span className={styles.ctaUnderline}>START</span>?
           </h2>
           <p className={styles.ctaBody}>
-            Let's discuss how we can solve your business challenges with the right
-            technology. Simple solutions for real growth.
+            Let's talk about what your business actually needs. No fluff — just the
+            right tools built to work for you.
           </p>
           <div className={styles.ctaButtons}>
             <Link href="/contact" className={styles.ctaBtnPrimary}>BOOK_A_CONSULT</Link>

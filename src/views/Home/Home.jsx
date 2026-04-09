@@ -20,16 +20,16 @@ export default function Home() {
         <div className={styles.heroGrid}>
           {/* Left */}
           <div className={styles.heroLeft}>
-            <div className={styles.heroBadge}>READY_FOR_GROWTH // 2025</div>
+            <div className={styles.heroBadge}>READY_FOR_GROWTH // 2026</div>
             <h1 className={styles.heroHeadline}>
               GROWING <br />
               <span className={styles.heroAccent}>YOUR</span> <br />
               BUSINESS.
             </h1>
             <p className={styles.heroBody}>
-              Moc-up Solutions builds high-impact websites and automated systems that
-              help small businesses save time and attract more customers. Modern tools,
-              simplified for you.
+              Moc-up Solutions builds high-quality websites and custom digital tools
+              for small businesses. I handle everything from design to launch so you
+              can stay focused on running your business.
             </p>
             <div className={styles.heroButtons}>
               <Link href="/contact" className={styles.btnPrimary}>FREE_CONSULT</Link>
@@ -232,7 +232,7 @@ export default function Home() {
         <div className={styles.ctaInner}>
           <h2 className={styles.ctaTitle}>READY_TO_GROW?</h2>
           <p className={styles.ctaBody}>
-            Moc-up Solutions is currently accepting new business partners for spring 2025 projects.
+            Taking on new clients now. Let's build something that actually works for your business.
           </p>
           <Link href="/contact" className={styles.ctaButton}>
             SAY_HELLO
